@@ -1,6 +1,3 @@
-// Source: https://github.com/ores-truffle-oreslang/oreslang-demos/blob/main/cli/main.ores
-// Oreslang project source; contributed to Linguist under the MIT license.
-
 pub routine main() => void {
   const left = 19;
   const right = 23;

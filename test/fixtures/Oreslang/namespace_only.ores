@@ -1,0 +1,2 @@
+namespace demo;
+val answer = 42;

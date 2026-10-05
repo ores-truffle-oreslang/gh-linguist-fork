@@ -329,6 +329,12 @@ class TestBlob < Minitest::Test
     end
   end
 
+  def test_oreslang_language
+    blob = sample_blob_memory("Oreslang/highlighting.ores")
+    assert_equal "Oreslang", blob.language.name
+    assert_equal "source.oreslang", blob.language.tm_scope
+  end
+
   def test_minified_files_not_safe_to_highlight
     assert !sample_blob_memory("JavaScript/jquery-1.6.1.min.js").safe_to_colorize?
   end

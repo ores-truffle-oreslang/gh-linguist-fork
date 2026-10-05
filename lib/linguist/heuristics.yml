@@ -717,6 +717,14 @@ disambiguations:
     pattern: '(?:^|<)\s*[A-Za-z0-9_]+\s*=\s*<'
   - language: Odin
     pattern: 'package\s+\w+|\b(?:im|ex)port\s*"[\w:./]+"|\w+\s*::\s*(?:proc|struct)\s*\(|^\s*//\s'
+- extensions: ['.ores']
+  rules:
+  - language: Oreslang
+    pattern:
+    - '^\s*define\s+(?:module|class|namespace|interface|trait|struct|actor|isoactor)\s+[A-Za-z_][A-Za-z0-9_]*\b'
+    - '^\s*(?:(?:pub|private|static|async|generator|nlex|pure|trap|shared|structural)\s+)*(?:def|fnc|routine)\s+[A-Za-z_][A-Za-z0-9_]*\b'
+    - '^\s*import\s+(?:actor|module|class|interface|trait|fnc|routine)\b'
+  - language: Text
 - extensions: ['.p']
   rules:
   - language: Gnuplot

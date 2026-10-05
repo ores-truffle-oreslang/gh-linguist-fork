@@ -5713,6 +5713,15 @@ Org:
   tm_scope: none
   ace_mode: text
   language_id: 267
+Oreslang:
+  type: programming
+  aliases:
+  - ores
+  extensions:
+  - ".ores"
+  tm_scope: source.oreslang
+  ace_mode: text
+  language_id: 1063187304
 OverPy:
   type: programming
   color: "#78b355"
@@ -8206,6 +8215,7 @@ Text:
   - ".nb"
   - ".ncl"
   - ".no"
+  - ".ores"
   filenames:
   - CITATION
   - CITATIONS

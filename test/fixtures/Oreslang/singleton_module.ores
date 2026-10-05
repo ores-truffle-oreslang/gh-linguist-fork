@@ -1,0 +1,3 @@
+define singleton module Registry as
+  pub fnc size(): int { return 0; }
+end

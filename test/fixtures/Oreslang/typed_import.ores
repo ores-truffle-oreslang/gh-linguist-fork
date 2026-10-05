@@ -1,0 +1,2 @@
+import type UserId from "./types";
+val current = 42;

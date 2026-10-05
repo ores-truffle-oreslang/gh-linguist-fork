@@ -1,6 +1,6 @@
 ---
 name: vscode-plugins
-version: 762c1222b1d93c6d1dbb507f07c2fc49c00cc477
+version: e0032db45bdd842c3967293c505a050cb53ffd80
 type: git_submodule
 homepage: https://github.com/ores-truffle-oreslang/vscode-plugins.git
 license: mit

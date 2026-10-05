@@ -330,9 +330,11 @@ class TestBlob < Minitest::Test
   end
 
   def test_oreslang_language
-    blob = sample_blob_memory("Oreslang/highlighting.ores")
-    assert_equal "Oreslang", blob.language.name
-    assert_equal "source.oreslang", blob.language.tm_scope
+    Dir.glob(File.join(samples_path, "Oreslang", "*.ores")).each do |path|
+      blob = sample_blob_memory("Oreslang/#{File.basename(path)}")
+      assert_equal "Oreslang", blob.language.name, path
+      assert_equal "source.oreslang", blob.language.tm_scope, path
+    end
   end
 
   def test_minified_files_not_safe_to_highlight

@@ -884,8 +884,8 @@ class TestHeuristics < Minitest::Test
 
   def test_ores_by_heuristics
     assert_heuristics({
-      "Oreslang" => ["Oreslang/highlighting.ores"],
-      "Text" => ["#{fixtures_path}/Text/ores_extension_collision.ores"]
+      "Oreslang" => all_fixtures("Oreslang", "*.ores"),
+      "Text" => all_fixtures("Text", "*.ores")
     }, alt_name="test.ores")
   end
 

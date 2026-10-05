@@ -721,9 +721,14 @@ disambiguations:
   rules:
   - language: Oreslang
     pattern:
-    - '^\s*define\s+(?:module|class|namespace|interface|trait|struct|actor|isoactor)\s+[A-Za-z_][A-Za-z0-9_]*\b'
-    - '^\s*(?:(?:pub|private|static|async|generator|nlex|pure|trap|shared|structural)\s+)*(?:def|fnc|routine)\s+[A-Za-z_][A-Za-z0-9_]*\b'
-    - '^\s*import\s+(?:actor|module|class|interface|trait|fnc|routine)\b'
+    - '^\s*define\s+(?:(?:singleton|shared|untrusted|abstract)\s+)?(?:module|class|namespace|interface|trait|struct|actor|isoactor)\s+[A-Za-z_][A-Za-z0-9_]*\b'
+    - '^\s*(?:(?:pub|private)\s+)?(?:(?:shared|untrusted)\s+)?(?:actor|isoactor|interface|trait)\s+[A-Za-z_][A-Za-z0-9_]*\b'
+    - '^\s*namespace\s+[A-Za-z_][A-Za-z0-9_]*\b'
+    - '^\s*export\s+entry\s+[A-Za-z_][A-Za-z0-9_]*\b'
+    - '^\s*type\s+[A-Za-z_][A-Za-z0-9_]*\s*(?:<[^>]+>\s*)?='
+    - '^\s*(?:(?:pub|private|static|async|generator|nlex|pure|trap|shared|structural|untrusted)\s+)*(?:(?:actor\s+fnc)|(?:def|fnc|routine))\s+[A-Za-z_][A-Za-z0-9_]*\b'
+    - '^\s*import\s+(?:actor|module|class|interface|trait|struct|type|types|fnc|routine)\b'
+    - '^\s*import\s+\*\s+as\s+[A-Za-z_][A-Za-z0-9_]*\s+from\s+[\"\'']'
   - language: Text
 - extensions: ['.p']
   rules:

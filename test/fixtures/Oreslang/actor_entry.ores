@@ -1,0 +1,4 @@
+export entry Worker;
+untrusted actor Worker as
+  pub run(): void { return; }
+end

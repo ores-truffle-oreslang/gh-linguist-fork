@@ -1569,6 +1569,9 @@
 [submodule "vendor/grammars/vscode-plantuml"]
 	path = vendor/grammars/vscode-plantuml
 	url = https://github.com/qjebbs/vscode-plantuml
+[submodule "vendor/grammars/vscode-plugins"]
+	path = vendor/grammars/vscode-plugins
+	url = https://github.com/ores-truffle-oreslang/vscode-plugins.git
 [submodule "vendor/grammars/vscode-prisma"]
 	path = vendor/grammars/vscode-prisma
 	url = https://github.com/prisma/vscode-prisma

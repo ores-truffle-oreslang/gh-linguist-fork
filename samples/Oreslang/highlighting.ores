@@ -1,0 +1,39 @@
+// Oreslang syntax coverage used by Linguist detection/highlighting tests.
+
+define module routing as
+  define class Route as
+    pub val String method;
+    pub val String path;
+
+    pub matches(String request_method, String request_path): bool {
+      return self.method eq request_method && self.path eq request_path;
+    }
+  end
+
+  define actor Router as
+    let Array<Route> routes = new Array<Route>();
+
+    pub add(Route route): void {
+      self.routes.add(route);
+    }
+
+    pub resolve(String method, String path) -> Option<Route> {
+      for (const route of self.routes) {
+        if route.matches(method, path) then
+          return Some(route);
+        fi
+      }
+      return None;
+    }
+  end
+
+  pub fnc same_identity(obj left, obj right): bool {
+    return left is right;
+  }
+
+  pub fnc contextual_names(obj foo): bool {
+    let is = foo;
+    let eq = foo;
+    return is is eq;
+  }
+end

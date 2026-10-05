@@ -728,6 +728,7 @@ disambiguations:
     - '^\s*type\s+[A-Za-z_][A-Za-z0-9_]*\s*(?:<[^>]+>\s*)?='
     - '^\s*(?:(?:pub|private|static|async|generator|nlex|pure|trap|shared|structural|untrusted)\s+)*(?:(?:actor\s+fnc)|(?:def|fnc|routine))\s+[A-Za-z_][A-Za-z0-9_]*\b'
     - '^\s*import\s+(?:actor|module|class|interface|trait|struct|type|types|fnc|routine)\b'
+    - '^\s*import\s+\*\s+as\s+[A-Za-z_][A-Za-z0-9_]*\s+from\s+[\"\'']'
   - language: Text
 - extensions: ['.p']
   rules:

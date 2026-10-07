@@ -5704,15 +5704,6 @@ Option List:
   codemirror_mode: shell
   codemirror_mime_type: text/x-sh
   language_id: 723589315
-Org:
-  type: prose
-  color: "#77aa99"
-  wrap: true
-  extensions:
-  - ".org"
-  tm_scope: none
-  ace_mode: text
-  language_id: 267
 Oreslang:
   type: programming
   aliases:
@@ -5722,6 +5713,15 @@ Oreslang:
   tm_scope: source.oreslang
   ace_mode: text
   language_id: 1063187304
+Org:
+  type: prose
+  color: "#77aa99"
+  wrap: true
+  extensions:
+  - ".org"
+  tm_scope: none
+  ace_mode: text
+  language_id: 267
 OverPy:
   type: programming
   color: "#78b355"

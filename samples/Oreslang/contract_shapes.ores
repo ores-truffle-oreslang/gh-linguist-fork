@@ -1,0 +1,12 @@
+// Linguist source-classification fixture; compiler acceptance is verified elsewhere.
+// Distinctive modern Oreslang syntax must not be classified as Rust or JavaScript.
+import module telemetry from "+lib/telemetry";
+
+type Port = int with value gte 1 and value lte 65535;
+
+define actor StreamWorker as
+  pub async fnc receive(Option<int> next) -> int {
+    const int value = await telemetry.receive(next);
+    return value;
+  }
+end

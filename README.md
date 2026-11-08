@@ -342,3 +342,13 @@ The language grammars included in this gem are covered by their repositories' re
 [`vendor/README.md`](/vendor/README.md) lists the repository for each grammar.
 
 All other files are covered by the MIT license, see [`LICENSE`](./LICENSE).
+
+## Repository ownership and legacy-exit decision (2026-11-08)
+
+**Current home:** `ores-truffle-oreslang/gh-linguist-fork`. **Status: EXPLICIT HOLD — not an approved transfer.** The language's current public name is **AttoLang**; preserve the old `oreslang-*` namespace and `.ores` compatibility where applicable. Do not rename or transfer this repo on the basis of a branding change.
+
+- **Belongs here:** GitHub Linguist language detection fork, syntax contribution/upstream coordination.
+- **Does not belong here:** AttoLang compiler runtime or automatic transfer under new ownership.
+- **Organizational boundaries:** [atto-lang](https://github.com/atto-lang) is for the AttoLang language, compilers, ecosystem tools and portable libraries; [atto-co](https://github.com/atto-co) independently governs hosted commercial infrastructure. This is a **legacy hold**, not a default permanent home and not a direct `atto-co` candidate. Similarly named repositories in destination organizations are distinct Git identities unless proven transferred.
+
+**Required next decision:** a named source owner and independent reviewer must explicitly select **(a) approved transfer, (b) archive, or (c) time-bounded compatibility exception with review date**, as defined in the private [migration plan #25](https://github.com/ores-truffle-oreslang/.github/pull/25). Record the decision, exact source HEAD SHA/tree, numeric ID, branch/ruleset protections, release/PR history, package and Pages consumers, GitHub Apps, secrets, Actions runners, webhooks, visibility and rollback in [coordination issue #26](https://github.com/ores-truffle-oreslang/.github/issues/26). No private source mirror, automatic renaming or unapproved org transfer. If transfer is later approved, preserve GitHub ID/history and check destination access/CI, with nonzero executed steps; `steps=[]`/`null` is `NOT_EXECUTED`. Keep any Pages redirects and external links explicit and independently checked.
